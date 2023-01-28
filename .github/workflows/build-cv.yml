@@ -1,0 +1,29 @@
+name: Build CV
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      
+      - name: Build
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: "*.tex"
+          glob_root_file: true
+          latexmk_use_xelatex: true
+        
+      - name: Commit changed files
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Build all .tex files
+          
