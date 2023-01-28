@@ -1,0 +1,136 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+\usepackage{pifont}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\begin{document}
+
+\header{Simon }{Hollingshead}{Site Reliability Engineer at Google $\cdotp$ BA (Hons., Cantab.)}
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+\begin{aside} % In the aside, each new line forces a line break
+\section{contact}
+\href{mailto:jobs@simonhollingshead.com}{\footnotesize{jobs@simonhollingshead.com}}
+\href{https://linkedin.com/in/shollingshead}{\footnotesize{linkedin.com/in/shollingshead}}
++44 7580 619 346
+~
+{\textbf{Initially contact me by:}}
+Email, InMail \ding{51}
+Phone \ding{55}
+~
+{\textbf{Latest CV always at:}}
+\href{https://simonhollingshead.com/cv/}{\footnotesize{simonhollingshead.com/cv/}}
+~
+\section{skills}
+C++
+Communication
+Cybersecurity
+Incident Response
+Monitoring Design
+System Design
+Troubleshooting
+~
+\section{interests}
+CTF Competitions
+Economics
+Scavenger Hunts
+Security Conferences
+Space
+Walking
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	BODY SECTIONS
+%----------------------------------------------------------------------------------------
+
+\section{experience}
+
+\begin{entrylist}
+\entry
+{{\footnotesize Since Sep `17}}
+{Site Reliability Engineer at Google}
+{London, UK}
+{\emph{Production Security Labs SRE (Since May 2022)} 
+
+Developing and implementing designs for horizontal security improvements
+to the entire Google production infrastructure.  Requires big-picture thinking and
+consideration of how to execute such changes safely with the minimal possible
+companywide cost to productivity.
+
+~
+
+\emph{Ads Quality Infrastructure SRE (Sep 2017 -- May 2022)}
+
+Service owner for a large backend product in Google Ads.  Executed large
+projects to increase developer velocity, improve turnup speed and
+safety, and improve time to remediation during incidents through changes
+to the monitoring.  Primary on-call during multiple major Ads outages, requiring troubleshooting
+and incident response skills.
+
+~
+
+}
+\entry
+{{\footnotesize Sep `14 -- Aug `17}}
+{Software Engineer at BAE Systems Applied Intelligence}
+{Guildford, UK}
+{\emph{Systems Engineering, Commercial Solutions Enterprise Managed Security}
+
+\emph{(May 2015 -- Aug 2017)}
+
+Built systems used by our Security Operations Centre.  Generally involved
+either system administration tasks, building `glue' applications to plumb
+together multiple commercially-available software products to meet our
+needs, or writing our own services where no such tool existed (e.g.\ for
+loading specialised datasets into ElasticSearch).
+
+~
+
+\emph{Rules and Analytics, Commercial Solutions Enterprise Managed Security}
+
+\emph{(Sep 2014 -- May 2015)}
+
+Wrote rules which identified anomalous activity from within terabytes of data
+daily using Hadoop MapReduce and Apache Hive.  Learned how to consider
+a customer's needs when producing analytics directly consumed by a remote
+team (the Security Operations Centre) and how to collaborate to
+provide richer information and reduce false positives.  Produced many
+tools which just became a standard part of Operations' toolkit to monitor, rerun
+or backfill data into the analytics system.
+}
+\end{entrylist}
+
+\section{education}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2011 -- 2014}
+{BA Hons. {\normalfont in Computer Science (Class }2.i{\normalfont )}}
+{University of Cambridge}
+{
+~
+
+A full academic history is provided at \href{https://simonhollingshead.com/academic-records/}{https://simonhollingshead.com/cv/}.
+}
+\end{entrylist}
+
+\section{other certifications}
+\begin{entrylist}
+\entry
+{Oct 2016}
+{Professional Scrum Developer I}
+{from Scrum.org}
+{}
+\end{entrylist}
+\end{document}
+
