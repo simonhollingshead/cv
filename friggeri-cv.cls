@@ -148,6 +148,7 @@
 
 \RequirePackage[left=6cm,top=2cm,right=1.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
+\RequirePackage{datetime2}
 \hypersetup{
 	pdfinfo={
 		Author={Simon Hollingshead},
