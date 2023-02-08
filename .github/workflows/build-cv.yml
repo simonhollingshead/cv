@@ -13,18 +13,18 @@ jobs:
       cancel-in-progress: true
 
     steps:
-      - name: Checkout
+      - name: Checkout Repo
         uses: actions/checkout@v3
-      
-      - name: Build
-        uses: xu-cheng/latex-action@v2
-        with:
-          root_file: "*.tex"
-          glob_root_file: true
-          latexmk_use_xelatex: true
-        
+ 
+      - name: Install LaTeX Depenencies
+        run: sudo apt update && sudo apt install latexmk texlive-xetex fonts-roboto
+
+      - name: Run latexmk
+        run: latexmk -xelatex cv.tex
+
       - name: Commit changed files
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Build all .tex files
+          file_pattern: '*.pdf'
           
