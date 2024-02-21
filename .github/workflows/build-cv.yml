@@ -1,8 +1,11 @@
 name: Build CV
 
 on:
+  schedule:
+    - cron: '1 0 1 * *' # Rebuild once a month, just after midnight on the 1st.
   push:
-    branches: [ "main" ]
+    branches:
+      - "main"
   workflow_dispatch:
 
 jobs:
